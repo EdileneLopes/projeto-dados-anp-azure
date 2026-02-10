@@ -3,6 +3,8 @@
 
 Este projeto demonstra a construção de um pipeline de dados completo (End-to-End) utilizando a plataforma Azure, focado na coleta e tratamento de dados públicos da ANP (Agência Nacional do Petróleo).
 
+![Arquitetura do Projeto](arquitetura.png)
+
 ## 🛠️ Tecnologias Utilizadas
 * **Azure Data Factory:** Orquestração e ingestão de dados via API/HTTP.
 * **Azure Data Lake Storage (Gen2):** Armazenamento em camadas (Arquitetura Medallion).
