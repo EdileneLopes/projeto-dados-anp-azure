@@ -16,7 +16,8 @@ O projeto segue o conceito de **Arquitetura Medallion**:
 2. **Silver (Trusted):** Limpeza de strings, normalização de tipos (decimais, datas) e tratamento de nulos via Databricks.
 3. **Gold (Refined):** Modelagem dimensional (Star Schema) com criação de tabelas Fato e Dimensões.
 
-
+## 📚 Créditos e Aprendizado
+Este projeto foi desenvolvido como parte de um estudo prático guiado por especialistas da comunidade de dados (YouTube), servindo como laboratório para aplicação de conceitos de Engenharia de Dados em ambiente Azure. A partir da base proposta, implementei melhorias focadas em padronização de tipos e boas práticas de banco de dados.
 
 ## 🚀 Diferenciais de Engenharia Aplicados
 * **Parametrização:** Ingestão dinâmica utilizando arquivos JSON para controle de parâmetros no Data Factory.
@@ -25,6 +26,7 @@ O projeto segue o conceito de **Arquitetura Medallion**:
 * **Performance:** Geração de Surrogate Keys (IDs) e tipagem otimizada para SQL Server.
 
 ## 📈 Reflexão Técnica (Evolução de DBA para Engenheira)
-Como profissional com background em DBA Cloud, este projeto visa transição para Engenharia de Dados. 
-* **O que aprendi:** A diferença entre gerenciar o banco de dados e gerenciar o ciclo de vida do dado em movimento. Foquei em conceitos de processamento distribuído, orquestração de pipelines complexos e a importância da separação entre armazenamento e processamento.
-* **Melhorias para a V2:** Implementação de tabelas no formato **Delta** para garantir transações ACID no Data Lake e uso de **Unity Catalog** para governança.
+Como profissional com background em DBA Cloud, utilizei este projeto guiado para materializar conceitos teóricos de Engenharia de Dados. 
+
+* **Capacidade de Execução:** Embora o fluxo tenha sido baseado em referências educacionais, a análise crítica sobre a tipagem (`Decimal` vs `Float`), a estruturação do script DDL e a escolha das Surrogate Keys foram decisões onde apliquei minha bagagem prévia em SQL Server para garantir um ambiente Gold performático.
+* **O que aprendi:** A diferença entre gerenciar o dado estático e o dado em movimento (ETL/ELT). Entendi como o Spark distribui o processamento, algo bem diferente da execução de queries em um motor relacional tradicional.
