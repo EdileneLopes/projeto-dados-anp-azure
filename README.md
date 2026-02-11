@@ -27,6 +27,13 @@ Este projeto foi desenvolvido como parte de um estudo prático guiado por especi
 * **Segurança:** Preparado para integração com **Azure Key Vault** para gestão de credenciais JDBC.
 * **Performance:** Geração de Surrogate Keys (IDs) e tipagem otimizada para SQL Server.
 
+  
+** 📐 Modelagem de Dados (Data Modeling)
+![modelo star schema](star-schema.png)
+Para este projeto, implementei uma modelagem Star Schema (Esquema Estrela) no Azure SQL Database, visando a alta performance em consultas analíticas e a facilidade de integração com ferramentas de BI.
+* Tabela Fato (dw.fato_anp): Centraliza as métricas de negócio (VALOR_VENDA e VALOR_COMPRA) e as chaves estrangeiras (FKs) que permitem a análise por múltiplas dimensões.
+* Camada de Staging: A tabela_anp_50 (em destaque no diagrama) representa a camada Silver, servindo como fonte para o processo de carga (ETL/ELT) da camada Gold (Star Schema).
+
 ## 📈 Reflexão Técnica (Evolução de DBA para Engenheira)
 Como profissional com background em DBA Cloud, utilizei este projeto guiado para materializar conceitos teóricos de Engenharia de Dados. 
 
