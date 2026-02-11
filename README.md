@@ -37,5 +37,5 @@ Para este projeto, implementei uma modelagem Star Schema (Esquema Estrela) no Az
 ## 📈 Reflexão Técnica (Evolução de DBA para Engenheira)
 Como profissional com background em DBA Cloud, utilizei este projeto guiado para materializar conceitos teóricos de Engenharia de Dados. 
 
-* **Capacidade de Execução:** Embora o fluxo tenha sido baseado em referências educacionais, a análise crítica sobre a tipagem (`Decimal` vs `Float`), a estruturação do script DDL e a escolha das Surrogate Keys foram decisões onde apliquei minha bagagem prévia em SQL Server para garantir um ambiente Gold performático.
+* **Capacidade de Execução:** Embora o fluxo tenha sido baseado em referências educacionais, a análise crítica sobre a tipagem (`Decimal` vs `Float`), a estruturação do script DDL e a escolha das chaves internas para o dw foram decisões onde apliquei minha bagagem prévia em SQL Server para garantir um ambiente Gold performático.
 * **O que aprendi:** A diferença entre gerenciar o dado estático e o dado em movimento (ETL/ELT). Entendi como o Spark distribui o processamento, algo bem diferente da execução de queries em um motor relacional tradicional.
